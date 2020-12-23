@@ -8,9 +8,6 @@ let createEmployeeRecord = (data) => data = {
     timeOutEvents: []
 }
 
-
-
-
 let createEmployeeRecords = (arr) => arr = arr.map(createEmployeeRecord)
 
 const createTimeInEvent = function(obj, stamp){
@@ -48,9 +45,8 @@ const allWagesFor = function(obj){
     return payment
 }
 
-const findEmployeeByFirstName = function(srcArray, firstName){
-    const found = srcArray.find(employee => {employee.firstName === firstName})
-    return srcArray.find(employee => employee.firstName === firstName)
+const findEmployeeByFirstName = (srcArray, firstName) => {
+   return srcArray.find( i => i.firstName === firstName)
 }
 
 const calculatePayroll = function(arr){
